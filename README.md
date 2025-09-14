@@ -62,16 +62,5 @@ Adicione um novo passo ao pipeline de CI no arquivo `.github/workflows/ci.yml` p
 
 **Dica:** Você pode usar a action `aquasecurity/trivy-action` do GitHub Marketplace.
 
-```yaml
-- name: Run Trivy vulnerability scanner
-  uses: aquasecurity/trivy-action@master
-  with:
-    image-ref: 'my-flask-app'
-    format: 'table'
-    exit-code: '1'
-    ignore-unfixed: true
-    vuln-type: 'os,library'
-    severity: 'CRITICAL,HIGH'
-```
 
 Bom dojo!
