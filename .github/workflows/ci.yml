@@ -8,4 +8,4 @@ jobs:
     
     steps:
     - name: workflow funfa
-      run: echo "teste"
+      run: echo test_app.py
