@@ -3,9 +3,16 @@ name: AulaDoJo
 on: [push, pull_request]
 
 jobs:
-  build:
+  teste:
     runs-on: ubuntu-latest
     
     steps:
-    - name: workflow funfa
-      run: echo test_app.py
+    - uses: actions/checkout@v4
+    - name: py set up
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: pytest
+      run: pip install -r requirements.txt
+    - name: run test
+      run: test_app.py
