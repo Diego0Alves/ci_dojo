@@ -62,5 +62,4 @@ Adicione um novo passo ao pipeline de CI no arquivo `.github/workflows/ci.yml` p
 
 **Dica:** Você pode usar a action `aquasecurity/trivy-action` do GitHub Marketplace.
 
-
 Bom dojo!
