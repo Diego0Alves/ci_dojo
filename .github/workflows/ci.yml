@@ -15,4 +15,4 @@ jobs:
     - name: pytest
       run: pip install -r requirements.txt
     - name: run test
-      run: test_app.py
+      run: pytest test_app.py
