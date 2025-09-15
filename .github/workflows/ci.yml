@@ -10,7 +10,8 @@ jobs:
     - uses: actions/checkout@v4
     - name: py set up
       uses: actions/setup-python@v5
-      with: python-latest
+      with:
+        python: '3.10'
     - name: req
       run: pip install -r requirements.txt
     - name: run test
