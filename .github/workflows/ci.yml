@@ -1,0 +1,11 @@
+name: AulaDoJo
+
+on: [push, pull_request]
+
+test:
+ runs-on: ubuntu-latest
+ 
+
+    
+
+
